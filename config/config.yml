@@ -1,0 +1,24 @@
+defaults: &defaults
+  admin_cn: 'cn=admin'
+  ldap_dn: 'dc=example,dc=com'
+  domain: 'example.com'
+
+test:
+  <<: *defaults
+  ldapserver: 127.0.0.1
+  passwd: foobar
+
+development:
+  <<: *defaults
+  ldapserver: 127.0.0.1
+  passwd: foobar
+
+staging:
+  <<: *defaults
+  ldapserver: 127.0.0.1
+  passwd: foobar
+
+production:
+  <<: *defaults
+  ldapserver: 127.0.0.1
+  passwd: foobar
